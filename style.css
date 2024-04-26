@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:wght@100&@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #151E3F
+}
+
+:root{
+    --color: #17a2ff;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    z-index: 2;
+}
+
+.btn:hover {
+    padding: 10px 15px; /* Mantener el mismo tamaño de padding al pasar el ratón por encima */
+}
+
+.btn-2{
+    border: 3px solid;
+}
+
+.btn-2:hover{
+    background-color: #001a2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+}
+
+.btn-2 span:nth-child(n){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+
+.btn-2 span:nth-child(1){
+    right: 10%;
+    top: -10px;
+    background-color: #fff;
+}
+
+.btn-2 span:nth-child(2){
+    left: 10%;
+    bottom: -10px;
+}
+
+.btn-2:hover span:nth-child(1){
+    right: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color: var(--color);
+    
+}
+
+.btn-2:hover span:nth-child(2){
+    left: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+} 
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #151E3F
+    "BLED" 0,
+    "SCAN" 0;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+header{
+    position: relative;
+    top: 30px;
+}
+
+#InMensaje{
+    position: relative;
+    top: 60px;
+}
+
+#mensaje {
+    background-color: rgb(88, 104, 177);
+    color: black;
+    border: 3px solid rgb(255, 255, 255);
+    position: relative;
+    top: 50px;
+}
+
+#Encriptar{
+    position:relative; 
+    top: 60px;
+}
+
+#Desencriptar{
+    position: relative;
+    top: 90px;
+}
+
+.OutMensaje{
+    position:relative; 
+    top: 133px;
+    text-align: center;
+}
+
+#resultado {
+    background-color: rgb(88, 104, 177);
+    color: black;
+    border: 3px solid rgb(255, 255, 255);
+    position:relative; 
+    top: 125px;
+}
+
+#Copiar{
+    position:relative; 
+    top: 130px;
+}
+   
+.eye{
+    position: relative;
+    width: 70px;
+    padding: 10px;
+    top: 180px;
+}
+
+footer{
+    position:relative;
+    top: 170px;
+    text-align: center;
+    padding: 10px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}    
+
+@media (max-width:400px) { /* Adaptacion dispositivos pequenos */
+   
+    #mensaje, #resultado {
+       width: calc(100% - 20%) ;
+    }
+}

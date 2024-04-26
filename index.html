@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+<title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <h1>Encriptador de texto</h1>   
+    </header>
+
+
+    <label for="mensaje" id="InMensaje">Ingrese su mensaje:</label>
+        <br>
+            <textarea id="mensaje" rows="10" cols="60"></textarea>
+        <br>
+
+        <a href="#" class="btn btn-2" onclick="encriptarMensaje()" id="Encriptar">Encriptar 
+            <span></span>
+            <span></span>
+        </a>
+        
+        <a href="#" class="btn btn-2" onclick="desencriptarMensaje()" id="Desencriptar">Desencriptar
+            <span></span>
+            <span></span>
+        </a>
+
+
+    <p class="OutMensaje">El mensaje encriptado/desencriptado aparecerá aquí:</p>
+        <br>
+            <textarea id="resultado" rows="10" cols="60" readonly></textarea>
+        <br>    
+
+    <a href="#" class="btn btn-2" onclick="copiarResultado()" class="btn btn-outline-primary btn-sm" id="Copiar">Copiar Resultado
+        <span></span>
+        <span></span>
+    </a> 
+    
+    <img src="eye 2.png" class="eye">
+
+    <footer>
+        <p>&copy; Copyright Uriel Serrano  2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
